@@ -1,0 +1,144 @@
+body {
+    scroll-behavior: smooth;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.navbar {
+    background: #6f42c1;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+
+section {
+    scroll-margin-top: 80px;
+}
+
+
+.hero {
+    height: 100vh;
+    min-height: 600px;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                url('bg.jpg') center/cover no-repeat;
+    color: white;
+}
+
+
+.typing {
+    font-size: 1.5rem;
+    min-height: 30px;
+}
+
+
+.about-box {
+    display: flex;
+    gap: 15px;
+    background: #fff;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: 0.3s;
+    align-items: center;
+}
+
+.about-box:hover {
+    transform: translateY(-5px);
+}
+
+.about-box i {
+    font-size: 1.8rem;
+    color: #6f42c1;
+}
+
+.skill {
+    margin-bottom: 20px;
+}
+
+.skill span {
+    font-weight: 500;
+}
+
+.progress {
+    height: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    background: #6f42c1;
+    border-radius: 10px;
+}
+
+
+.project-card {
+    transition: 0.4s;
+    border-radius: 15px;
+    overflow: hidden;
+    border: none;
+}
+
+.project-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+
+.project-card .card-body {
+    padding: 20px;
+}
+
+
+.project-card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+
+.btn-primary {
+    background: #6f42c1;
+    border: none;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background: #5a32a3;
+}
+
+
+footer {
+    background: #6f42c1;
+    color: white;
+}
+
+
+@media (max-width: 768px) {
+
+    .hero {
+        height: auto;
+        padding: 100px 20px;
+        text-align: center;
+    }
+
+    .typing {
+        font-size: 1.2rem;
+    }
+
+    .about-box {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .project-card img {
+        height: 180px;
+    }
+}
